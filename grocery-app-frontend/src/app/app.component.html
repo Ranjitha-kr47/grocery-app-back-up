@@ -1,0 +1,53 @@
+<div class="page-wrapper" style="background-color: #ffffff;">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a routerLink="/home">
+        <img src="assets/images/logo6.png" alt="groceryapp" class="img-responsive"
+          style="height:70px;width:500px;">
+      </a>
+    </div>
+
+    <app-product-category></app-product-category>
+
+  </aside>
+  <!-- END MENU SIDEBAR-->
+
+  <div class="page-container" style="background-color:#ffffff ;">
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+
+            <app-search></app-search>
+
+            <!-- <app-order-history></app-order-history> -->
+            <app-login-status></app-login-status>
+            <app-cart-status></app-cart-status>
+            
+          
+
+          </div>
+          <div class="account-wrap"></div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <!-- MAIN CONTENT-->
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
+
+<!-- ENDS PAGE CONTAINER -->
+
+<footer>
+  <ul>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/contact">Contact Us</a></li>s
+    <li><a href="/help">Help</a></li>
+  </ul>
+</footer>
